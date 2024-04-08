@@ -6,44 +6,38 @@ import { VitePWA } from "vite-plugin-pwa";
 export default defineConfig({
   plugins: [
     react(),
-    VitePWA({
-      registerType: "prompt",
-      includeAssets: [
-        "favicon.ico",
-        "apple-touch-icon.png",
-        "maskable-icon.png",
-      ],
+    VitePWA({ 
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: "React-vite-app",
-        short_name: "react-vite-app",
-        description: "I am a simple vite app",
+        name: 'Vite PWA Project',
+        short_name: 'Vite PWA Project',
+        theme_color: '#ffffff',
         icons: [
-          {
-            src: "/android-chrome-192x192.png",
-            sizes: "192x192",
-            type: "image/png",
-            purpose: "favicon",
-          },
-          {
-            src: "/android-chrome-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "favicon",
-          },
-          {
-            src: "/maskable_icon.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "any maskable",
-          },
+            {
+                src: 'favicon-32x32.png',
+                sizes: '32x32',
+                type: 'image/png'
+            },
+            {
+              src: 'android-chrome-192x192.png',
+              sizes: '192x192',
+              type: 'image/png'
+            },
+            {
+                src: 'android-chrome-512x512.png',
+                sizes: '512x512',
+                type: 'image/png',
+                purpose: 'any'
+            },
+            {
+                src: 'maskable_icon.png',
+                sizes: '512x512',
+                type: 'image/png',
+                purpose: 'maskable'
+            }
         ],
-        theme_color: "#171717",
-        background_color: "#f0e7db",
-        display: "standalone",
-        scope: "/",
-        start_url: "/",
-        orientation: "portrait",
-      },
-    }),
+      }, 
+    })
   ],
 });
