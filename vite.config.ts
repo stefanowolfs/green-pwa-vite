@@ -4,6 +4,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: 'green-pwa-vite',
   plugins: [
     react(),
     VitePWA({ 
@@ -12,6 +13,7 @@ export default defineConfig({
       manifest: {
         name: 'Vite PWA Project',
         short_name: 'Vite PWA Project',
+        description: 'Description',
         theme_color: '#ffffff',
         icons: [
             {
@@ -31,7 +33,7 @@ export default defineConfig({
                 purpose: 'any'
             },
             {
-                src: 'maskable_icon.png',
+                src: 'mask-icon.png',
                 sizes: '512x512',
                 type: 'image/png',
                 purpose: 'maskable'
