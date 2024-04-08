@@ -11,10 +11,10 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'Vite PWA Project',
-        short_name: 'Vite PWA Project',
-        description: 'Description',
-        theme_color: '#ffffff',
+        name: 'GreenUP',
+        short_name: 'GreenUP',
+        description: 'Finance Software for budgeting and tracking expenses',
+        theme_color: '#171D1C',
         icons: [
           {
             src: 'pwa-64x64.png',
