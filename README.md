@@ -1,3 +1,5 @@
+<img src="./docs/cover.png" alt="cover" />
+
 # Green UP
 
 This project is a case study to improve my skills with front-end and PWA in general. It will be a finance software for budgeting and tracking expenses that can be installed and store locally.
